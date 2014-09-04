@@ -14,6 +14,33 @@
     $valores = $rs["valores"];
     $valores_contenido = $rs["valores_contenido"];
   }
+
+  $listado = "select * from slide";
+  $sentencia = mysql_query($listado,$conn);
+  while($rs=mysql_fetch_array($sentencia,$mibase)){
+    $slide1_texto1 = $rs["slide1_texto1"];
+    $slide1_texto2 = $rs["slide1_texto2"];
+    $slide2_texto1 = $rs["slide2_texto1"];
+    $slide2_texto2 = $rs["slide2_texto2"];
+    $slide3_texto1 = $rs["slide3_texto1"];
+    $slide3_texto2 = $rs["slide3_texto2"];
+    $slide4_texto1 = $rs["slide4_texto1"];
+    $slide4_texto2 = $rs["slide4_texto2"];
+  }
+
+  $listado = "select * from pie";
+  $sentencia = mysql_query($listado,$conn);
+  while($rs=mysql_fetch_array($sentencia,$mibase)){
+    $texto1 = $rs["texto1"];
+    $texto2 = $rs["texto2"];
+    $campo1 = $rs["campo1"];
+    $campo2 = $rs["campo2"];
+    $campo3 = $rs["campo3"];
+    $campo4 = $rs["campo4"];
+    $campo5 = $rs["campo5"];
+    $campo6 = $rs["campo6"];
+  }
+
 ?>
 <!doctype html>
 <html lang="es">
@@ -78,40 +105,40 @@
         <li class="slide">
           <figure>
             <figcaption>
-              <h1>Lorem ipsum dolor sit amet</h1>
-              <a href="cursos.php">consectetur adipisicing</a>
+              <h1><?php echo $slide1_texto1 ?></h1>
+              <a href="cursos.php"><?php echo $slide1_texto2 ?></a>
             </figcaption>
-            <img src="imagenes/slide/1.jpg" alt="dribbble witches">
+            <img src="imagenes/slide/1.jpg" >
           </figure>
         </li>
 
         <li class="slide">
           <figure>
             <figcaption>
-              <h1>tempor incididunt ut labore et dolore</h1>
-              <a href="cursos.php">magna aliqua. Ut enim ad minim veniam,</a>
+              <h1><?php echo $slide2_texto1 ?></h1>
+              <a href="cursos.php"><?php echo $slide2_texto2 ?></a>
             </figcaption>
-            <img src="imagenes/slide/2.jpg" alt="searing mountain illustration">
+            <img src="imagenes/slide/2.jpg" >
           </figure>
         </li>
 
         <li class="slide">
           <figure>
             <figcaption>
-              <h1>Consequat Duis aute irure</h1>
-              <a href="cursos.php">dolor in reprehenderit</a>
+              <h1><?php echo $slide3_texto1 ?></h1>
+              <a href="cursos.php"><?php echo $slide3_texto2 ?></a>
             </figcaption>
-            <img src="imagenes/slide/3.jpg" alt="taipei fireworks">
+            <img src="imagenes/slide/3.jpg" >
           </figure>
         </li>
 
         <li class="slide">
           <figure>
             <figcaption>
-              <h1>Voluptate velit esse</h1>
-              <a href="cursos.php">exercitation ullamco laboris</a>
+              <h1><?php echo $slide4_texto1 ?></h1>
+              <a href="cursos.php"><?php echo $slide4_texto2 ?></a>
             </figcaption>
-            <img src="imagenes/slide/4.jpg" alt="coffee cup iphone newspaper">
+            <img src="imagenes/slide/4.jpg" >
           </figure>
         </li>
 
@@ -299,44 +326,32 @@
 
   <footer>
     <div class="contenido_footer">
-      <p>Guardia Vieja  N° 255 of 1112- Providencia - Santiago Fono 56-2-23310311 / San Martin 571 Of 6 – Rancagua Fono 56-72-2768341</p>
-      <p>Celulares +56-9 90 74 8650 / +56-9 54 01 5291</p>
+      <p><?php echo $texto1 ?></p>
+      <p><?php echo $texto2 ?></p>
       <div class="footer_secciones">
         <div class="seccion">
           <h3>ISO 9001</h3>
-          <p>Lorem ipsum </p>
-          <p>Dolor sit amet</p>
-          <p>Adipiscing elit</p>
+          <p><?php echo $campo1 ?></p>
         </div>
         <div class="seccion">
           <h3>ISO 14001</h3>
-          <p>Praesent</p>
-          <p>Orci et dolor</p>
-          <p>Sagittis vehicula</p>
+          <p><?php echo $campo2 ?></p>
         </div>
         <div class="seccion">
           <h3>INOCUIDAD</h3>
-          <p>Ultricies nisi</p>
-          <p>Aenean convallis </p>
-          <p>Dapibus lorem</p>
+          <p><?php echo $campo3 ?></p>
         </div>
         <div class="seccion">
           <h3>SST</h3>
-          <p>Ullamcorper sem</p>
-          <p>Integer rhoncus </p>
-          <p>Nibh sit amet</p>
+          <p><?php echo $campo4 ?></p>
         </div>
         <div class="seccion">
           <h3>G. EMPRESARIAL</h3>
-          <p>Congue scelerisque</p>
-          <p>Donec euismod </p>
-          <p>Lorem hendrerit,</p>
+          <p><?php echo $campo5 ?></p>
         </div>
         <div class="seccion">
           <h3>G. PERSONAS</h3>
-          <p>Ondimentum enim</p>
-          <p>Fringilla nisls</p>
-          <p>Rhoncus hers</p>
+          <p><?php echo $campo6 ?></p>
         </div>
       </div>
     </div>

@@ -1,3 +1,18 @@
+<?php include("Conexion.php"); 
+  $listado = "select * from pie";
+  $sentencia = mysql_query($listado,$conn);
+  while($rs=mysql_fetch_array($sentencia,$mibase)){
+    $texto1 = $rs["texto1"];
+    $texto2 = $rs["texto2"];
+    $campo1 = $rs["campo1"];
+    $campo2 = $rs["campo2"];
+    $campo3 = $rs["campo3"];
+    $campo4 = $rs["campo4"];
+    $campo5 = $rs["campo5"];
+    $campo6 = $rs["campo6"];
+  }
+  
+?>
 <!doctype html>
 <html lang="es">
 <head>
@@ -252,44 +267,32 @@
 
   <footer>
     <div class="contenido_footer">
-      <p>Guardia Vieja  N° 255 of 1112- Providencia - Santiago Fono 56-2-23310311 / San Martin 571 Of 6 – Rancagua Fono 56-72-2768341</p>
-      <p>Celulares +56-9 90 74 8650 / +56-9 54 01 5291</p>
+      <p><?php echo $texto1 ?></p>
+      <p><?php echo $texto2 ?></p>
       <div class="footer_secciones">
         <div class="seccion">
           <h3>ISO 9001</h3>
-          <p>Lorem ipsum </p>
-          <p>Dolor sit amet</p>
-          <p>Adipiscing elit</p>
+          <p><?php echo $campo1 ?></p>
         </div>
         <div class="seccion">
           <h3>ISO 14001</h3>
-          <p>Praesent</p>
-          <p>Orci et dolor</p>
-          <p>Sagittis vehicula</p>
+          <p><?php echo $campo2 ?></p>
         </div>
         <div class="seccion">
           <h3>INOCUIDAD</h3>
-          <p>Ultricies nisi</p>
-          <p>Aenean convallis </p>
-          <p>Dapibus lorem</p>
+          <p><?php echo $campo3 ?></p>
         </div>
         <div class="seccion">
           <h3>SST</h3>
-          <p>Ullamcorper sem</p>
-          <p>Integer rhoncus </p>
-          <p>Nibh sit amet</p>
+          <p><?php echo $campo4 ?></p>
         </div>
         <div class="seccion">
           <h3>G. EMPRESARIAL</h3>
-          <p>Congue scelerisque</p>
-          <p>Donec euismod </p>
-          <p>Lorem hendrerit,</p>
+          <p><?php echo $campo5 ?></p>
         </div>
         <div class="seccion">
           <h3>G. PERSONAS</h3>
-          <p>Ondimentum enim</p>
-          <p>Fringilla nisls</p>
-          <p>Rhoncus hers</p>
+          <p><?php echo $campo6 ?></p>
         </div>
       </div>
     </div>

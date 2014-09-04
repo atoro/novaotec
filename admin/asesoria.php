@@ -200,7 +200,7 @@ while($rs=mysql_fetch_array($sentencia,$mibase)){
 </div>
 <div align="left"></div>
 <div align="center"></div>
-<p align="center"><a href="sesion.php" class="textoadmin">Volver</a></p>
+<p align="center"><a href="sesion.php" class="texto">Volver</a></p>
 <p align="center">&nbsp;</p>
 <p align="center">&nbsp;</p>
 </body>

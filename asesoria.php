@@ -1,3 +1,18 @@
+<?php include("Conexion.php"); 
+  $listado = "select * from pie";
+  $sentencia = mysql_query($listado,$conn);
+  while($rs=mysql_fetch_array($sentencia,$mibase)){
+    $texto1 = $rs["texto1"];
+    $texto2 = $rs["texto2"];
+    $campo1 = $rs["campo1"];
+    $campo2 = $rs["campo2"];
+    $campo3 = $rs["campo3"];
+    $campo4 = $rs["campo4"];
+    $campo5 = $rs["campo5"];
+    $campo6 = $rs["campo6"];
+  }
+  
+?>
 <!doctype html>
 <html lang="es">
 <head>
@@ -57,56 +72,16 @@
 
     <!-- CONTENIDO PRINCIPAL -->
     <section class="contenido">
+      <?php 
+      $listado = "select * from asesoria";
+      $sentencia = mysql_query($listado,$conn);
+      while($rs=mysql_fetch_array($sentencia,$mibase)){
+      ?>
       <div class="bloque">
-        <h2>DIAGNOSTICO</h2>
-        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat</P>
+        <h2><?php $texto = str_replace("\r\n","<br>",$rs["asesoria_titulo"]); echo $texto ?></h2>
+        <P><?php $texto = str_replace("\r\n","<br>",$rs["asesoria_contenido"]); echo $texto ?></P>
       </div>
-      <div class="bloque">
-        <h2>IMPLEMENTACIÓN</h2>
-        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</P>
-      </div>
-      <div class="bloque">
-        <h2>AUDITORÍA</h2>
-        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</P>
-      </div>
-      <div class="bloque">
-        <h2>REGULARIZACIÓN DE EMPRESA</h2>
-        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</P>
-      </div>
-      <div class="bloque">
-        <h2>ESTADO FINANCIERO</h2>
-        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</P>
-      </div>
-      <div class="bloque">
-        <h2>PROYECTO DE MEJORA</h2>
-        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</P>
-      </div>
-      <div class="bloque">
-        <h2>CONTROL DE GESTIÓN</h2>
-        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</P>
-      </div>
-      <div class="bloque">
-        <h2>GESTIÓN DE PROVEEDORES</h2>
-        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</P>
-      </div>
+      <?php } ?>
 
       <!-- LINKS DE INTERES-->
       <div class="links">
@@ -263,44 +238,32 @@
 
   <footer>
     <div class="contenido_footer">
-      <p>Guardia Vieja  N° 255 of 1112- Providencia - Santiago Fono 56-2-23310311 / San Martin 571 Of 6 – Rancagua Fono 56-72-2768341</p>
-      <p>Celulares +56-9 90 74 8650 / +56-9 54 01 5291</p>
+      <p><?php echo $texto1 ?></p>
+      <p><?php echo $texto2 ?></p>
       <div class="footer_secciones">
         <div class="seccion">
           <h3>ISO 9001</h3>
-          <p>Lorem ipsum </p>
-          <p>Dolor sit amet</p>
-          <p>Adipiscing elit</p>
+          <p><?php echo $campo1 ?></p>
         </div>
         <div class="seccion">
           <h3>ISO 14001</h3>
-          <p>Praesent</p>
-          <p>Orci et dolor</p>
-          <p>Sagittis vehicula</p>
+          <p><?php echo $campo2 ?></p>
         </div>
         <div class="seccion">
           <h3>INOCUIDAD</h3>
-          <p>Ultricies nisi</p>
-          <p>Aenean convallis </p>
-          <p>Dapibus lorem</p>
+          <p><?php echo $campo3 ?></p>
         </div>
         <div class="seccion">
           <h3>SST</h3>
-          <p>Ullamcorper sem</p>
-          <p>Integer rhoncus </p>
-          <p>Nibh sit amet</p>
+          <p><?php echo $campo4 ?></p>
         </div>
         <div class="seccion">
           <h3>G. EMPRESARIAL</h3>
-          <p>Congue scelerisque</p>
-          <p>Donec euismod </p>
-          <p>Lorem hendrerit,</p>
+          <p><?php echo $campo5 ?></p>
         </div>
         <div class="seccion">
           <h3>G. PERSONAS</h3>
-          <p>Ondimentum enim</p>
-          <p>Fringilla nisls</p>
-          <p>Rhoncus hers</p>
+          <p><?php echo $campo6 ?></p>
         </div>
       </div>
     </div>

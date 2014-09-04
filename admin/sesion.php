@@ -84,10 +84,10 @@ if($_POST["Entrar"]){
           <td height="30" align="center" bgcolor="#FFFFFF"  class="texto" ><a href="asesoria.php" class="texto">Asesoria</a></td>
         </tr>
         <tr>
-          <td height="22" align="center" bgcolor="#FFFFFF"  class="logo" >&nbsp;</td>
+          <td height="30" align="center" bgcolor="#FFFFFF"  class="logo" ><a href="pie.php" class="texto">Pie de Página</a></td>
         </tr>
         <tr>
-          <td height="22" align="center" bgcolor="#FFFFFF"  class="logo" >&nbsp;</td>
+          <td height="30" align="center" bgcolor="#FFFFFF"  class="logo" ><a href="slide.php" class="texto">Slide</a></td>
         </tr>
         <tr>
           <td height="22" align="center" bgcolor="#FFFFFF"  class="logo" >&nbsp;</td>
