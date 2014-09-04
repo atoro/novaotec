@@ -1,0 +1,44 @@
+﻿/*Horizontal Orientation CSS*/
+.jscarousal-horizontal {
+	width: 1020px;
+	height: 140px;
+	background-color: #f8f8f8;
+	border: solid 1px #ddd;
+	margin: 0;
+	padding: 0;
+	padding: 22px 8px 22px 8px;
+	position: relative;
+}
+.jscarousal-contents-horizontal {
+	width: 100%;
+	height: 124px;
+	position: relative;
+	overflow: hidden;
+}
+.jscarousal-contents-horizontal > div {
+	position: absolute;
+	width: 100%;
+	height: 124px;
+}
+.jscarousal-contents-horizontal > div > div {
+	float: left;
+	margin-left: 8px;
+	margin-right: 8px;
+}
+.jscarousal-contents-horizontal img {
+	width: 95px;
+	height: 95px;
+	border: solid 1px #ccc;
+}
+.hidden {
+	display: none;
+}
+.visible {
+	display: block;
+}
+
+
+
+        
+        
+        

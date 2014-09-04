@@ -1,0 +1,189 @@
+@media only screen and (min-width: 768px) {
+
+    header .centro_header {
+        height: 50px;
+        margin: auto;
+        text-align: center; 
+        width: 95%;
+    }
+    header #menu {
+        display: inline-block;
+    }
+    header #menu ul li {
+        display: inline-block;
+        margin: -5px auto 0 auto;
+    }
+    header #menu ul .activo {
+        background-color: #63b1c9;
+        color: #fff;
+        height: 54px;
+        overflow: hidden;
+        margin-top: 0px;
+        -webkit-transition: all 0.2s linear;
+        -moz-transition: all 0.2s linear;
+        -o-transition: all 0.2s linear;
+        transition: all 0.2s linear;
+    }
+    header #menu ul li a {
+        color: white;
+        display: inline-block;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        height: 55px;
+        margin-top: 5px;
+        padding: 0 10px;
+        -webkit-transition: all 0.2s linear;
+        -moz-transition: all 0.2s linear;
+        -o-transition: all 0.2s linear;
+        transition: all 0.2s linear;
+    }
+    header #menu ul li a:hover {
+        background-color: #63b1c9;
+        color: #fff;
+        padding: 5px 10px;
+        -webkit-transition: all 0.2s linear;
+        -moz-transition: all 0.2s linear;
+        -o-transition: all 0.2s linear;
+        transition: all 0.2s linear;
+    }
+    .contenido_logo .centro_logo .logo {
+        float: left;
+    }
+    .contenido_logo .centro_logo .redes {
+        display: block;
+        float: right;
+        padding-top: 40px;
+    }
+    .contenido_logo .centro_logo .redes a {
+        margin-left: 10px;
+        -webkit-transition: all 0.2s linear;
+        -moz-transition: all 0.2s linear;
+        -o-transition: all 0.2s linear;
+        transition: all 0.2s linear;
+    }
+    .contenido_logo .centro_logo .redes a:hover {
+        opacity: 0.8;
+        -webkit-transition: all 0.2s linear;
+        -moz-transition: all 0.2s linear;
+        -o-transition: all 0.2s linear;
+        transition: all 0.2s linear;
+    }
+    .contenedor_principal {
+        text-align: center;
+    }
+    .contenedor_principal .contenido {
+        width: 60%;
+        display: inline-block;
+        vertical-align: top;
+        text-align: left;
+    }
+    .contenedor_principal .contenido .bloque .img_noticia {
+        width: 45%;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 3%;
+    }
+    .contenedor_principal .contenido .bloque .texto_noticia {
+        width: 45%;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .contenedor_principal .contenido .cursos .curso {
+        width: 45%;
+        display: inline-block;
+        margin-right: 15px;
+        vertical-align: top;
+    }
+    .contenedor_principal .secundario {
+        width: 32%;
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 7%;
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+
+    footer .contenido_footer {
+        margin: auto;
+        width: 1024px;
+    }
+    footer .contenido_footer .footer_secciones {
+        display: inline-block;
+        margin-top: 20px;
+    }
+    footer .contenido_footer .footer_secciones .seccion {
+        text-align: center;
+        width: 140px;
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 10px;
+    }
+    footer .contenido_footer .footer_secciones .seccion h3 {
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    header .centro_header {
+        margin: auto;
+        width: 1024px;
+    }	
+    header #menu ul {
+        font-size: 14px;
+        text-align: center;
+    }
+    header #menu ul li {
+        margin: -5px 7px 0 7px;
+        display: inline-block;
+    }  
+    header #menu ul li a {
+        color: white;
+        display: inline-block;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        padding: 0 10px;
+        font-weight: 600;
+        -webkit-transition: all 0.2s linear;
+        -moz-transition: all 0.2s linear;
+        -o-transition: all 0.2s linear;
+        transition: all 0.2s linear;
+    }
+    header #menu ul li a:hover {
+        background-color: #63b1c9;
+        color: #fff;
+        
+        -webkit-transition: all 0.2s linear;
+        -moz-transition: all 0.2s linear;
+        -o-transition: all 0.2s linear;
+        transition: all 0.2s linear;
+    }
+    .contenido_logo .centro_logo {
+        margin: 0 auto;
+        width: 1024px;
+    }
+    .contenedor_principal {
+        margin: 45px auto 0 auto;
+        width: 1024px;
+    }
+    .contenedor_principal .contenido .cursos .curso {
+        width: 30%;
+        margin-right: 17px;
+    }
+    .clientes {
+        display: block;
+        width: 1024px;
+        margin: auto;
+        height: 180px;
+    }
+    
+}
+
+
+
+
+
+
+

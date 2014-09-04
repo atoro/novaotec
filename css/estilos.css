@@ -1,0 +1,274 @@
+body {
+	color: #444;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+footer {
+	background: #63b1c9;
+}
+footer .contenido_footer {
+	margin: 0 auto;
+	text-align: center;
+	width: 90%;
+	padding: 50px 0;
+}
+footer .contenido_footer a {
+	color: white;
+	display: block;
+	font-size: 14px;
+	margin-top: 15px;
+	text-decoration: none;
+}
+footer .contenido_footer a:hover {
+	color: #2a6b7f;
+}
+footer .contenido_footer .footer_secciones {
+	display: none;
+}
+footer .contenido_footer p {
+	color: white;
+	font-size: 14px;
+}
+.contenido_logo {
+	height: 110px;
+}
+.contenido_logo .centro_logo {
+	margin: 0 auto;
+	width: 90%;
+}
+.contenido_logo .centro_logo .logo {
+	width: 312px;
+	margin: 0 auto;
+	padding-top: 25px;
+}
+.contenido_logo .centro_logo .redes {
+	display: none;
+}
+.contenedor_principal {
+	margin: 45px auto 0 auto;
+	width: 90%;
+}
+.contenedor_principal .contenido {
+	margin-bottom: 30px;
+}
+.contenedor_principal .contenido a {
+	color: white;
+}
+.contenedor_principal .contenido .boton {
+	background-color: #f92f01;
+	border: none;
+	color: white;
+	padding: 3px;
+	margin-bottom: 20px;
+	margin-right: 5px;
+}
+.contenedor_principal .contenido .boton:hover {
+	background-color: #e97307;
+}
+.contenedor_principal .contenido .bloque {
+	border-bottom: 1px solid #ddd;
+	margin: 0 0 20px 0;
+	padding-bottom: 15px;
+}
+.contenedor_principal .contenido .bloque .enviar {
+	display: block;
+	color: white;
+	border: none;
+	width: 70px;
+	text-align: center;
+	margin-top: 20px;
+	background-color: #4b9ab3;
+	padding: 3px 0;
+}
+.contenedor_principal .contenido .bloque .enviar:hover {
+	background-color: #f63001;
+}
+.contenedor_principal .contenido .bloque .input {
+	width: 100%;
+	display: block;
+	margin-bottom: 10px;
+	border: #ddd solid 1px;
+	color: #444;
+	padding: 5px;
+}
+.contenedor_principal .contenido .bloque .img_noticia,
+.contenedor_principal .contenido .bloque .img_noticia img {
+	width: 100%;
+}
+.contenedor_principal .contenido .bloque  .img_detalle,
+.contenedor_principal .contenido .bloque  .img_detalle img { 
+	width: 100%;
+}
+.contenedor_principal .contenido .bloque p {
+	font-size: 14px;
+}
+.contenedor_principal .contenido .bloque .mensaje {
+	width: 100%;
+	display: block;
+	margin-bottom: 10px;
+	height: 100px;
+	border: #ddd solid 1px;
+	color: #444;
+	padding: 5px;
+}
+.contenedor_principal .contenido .bloque .field_select {
+	border: #ddd solid 1px;
+	color: #444;
+	padding: 5px;
+}
+.contenedor_principal .contenido .bloque a {
+	color: white;
+	background-color: #4b9ab3;
+	text-decoration: none;
+	width: 100px;
+	display: block;
+	text-align: center;
+	margin-top: 15px;
+}
+.contenedor_principal .contenido .bloque .a {
+	display: inline-block;
+	line-height: 16px;
+	vertical-align: middle;
+}
+.contenedor_principal .contenido .bloque .a a {
+	color: #444;
+}
+.contenedor_principal .contenido .bloque .cont {
+	display: block;
+}
+.contenedor_principal .contenido .bloque .pdf {
+	display: inline-block;
+	width: 40px; 
+	margin-right: 10px;
+	vertical-align: middle;
+}
+.contenedor_principal .contenido .bloque .pdf img{
+	width: 100%; 
+}
+.contenedor_principal .contenido .bloque h2 {
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+.contenedor_principal .contenido .bloque h3 {
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+.contenedor_principal .contenido .bloque .h2 {
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+.contenedor_principal .contenido .bloque .strong {
+	width: 100px;
+	display: inline-block;
+}
+.contenedor_principal .contenido .bloque .p {
+	display: inline-block;
+}
+.contenedor_principal .contenido .cursos .curso {
+	margin-bottom: 25px;
+}
+.contenedor_principal .contenido .cursos .curso a {
+	background-color: #4b9ab3;
+	color: white;
+	text-decoration: none;
+	width: 70px;
+	margin: 15px auto 0 auto;
+	display: block;
+	text-align: center;
+	padding: 1px 0;
+}
+.contenedor_principal .contenido .cursos .curso a:hover {
+	background-color: #f82e00;
+}
+.contenedor_principal .contenido .cursos .curso h2 {
+	text-align: center;
+	font-size: 16px;
+	font-weight: 600;
+}
+.contenedor_principal .contenido .cursos .curso p {
+	text-align: center;
+}
+.contenedor_principal .contenido .cursos .curso .img_curso {
+	width: 100%;
+}
+.contenedor_principal .contenido .cursos .curso .img_curso img {
+	width: 100%;
+}
+.contenedor_principal .contenido .cursos h4 {
+	margin-bottom: 15px;
+	font-weight: 600;
+}
+.contenedor_principal .contenido .links li a {
+	color: #444;
+	font-size: 14px;
+	text-decoration: none;
+}
+.contenedor_principal .contenido .links li a:hover {
+	color: #4b9ab3;
+}
+.contenedor_principal .contenido .links .titulo {
+	background-color: #f8f8f8;
+	color: #444;
+	font-size: 18px;
+	font-weight: 600;
+	padding: 20px;
+	border-bottom: solid 3px #4b9ab3;
+	margin-bottom: 15px;
+}
+.contenedor_principal .secundario .proximos_cursos .curso {
+	border-bottom: 1px solid #ddd;
+	margin: 25px 0;
+	padding-bottom: 15px;
+}
+.contenedor_principal .secundario .proximos_cursos .curso .imagen_curso {
+	width: 50%;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 5px;
+}
+.contenedor_principal .secundario .proximos_cursos .curso .imagen_curso img {
+	width: 100%;
+}
+.contenedor_principal .secundario .proximos_cursos .curso .texto_curso {
+	display: inline-block;
+	width: 45%;
+	margin-left: 3%;
+	vertical-align: top;
+}
+.contenedor_principal .secundario .proximos_cursos .curso .texto_curso h2 {
+	font-size: 16px;
+	font-weight: 600;
+}
+.contenedor_principal .secundario .proximos_cursos .curso .texto_curso p {
+	font-size: 14px;
+}
+.contenedor_principal .secundario .proximos_cursos .titulo_curso {
+	background-color: #f8f8f8;
+	color: #444;
+	font-size: 18px;
+	font-weight: 600;
+	padding: 20px;
+	border-bottom: solid 3px #4b9ab3;
+}
+.clientes {
+	display: none;
+}
+.emagenic {
+	background-color: #f8f8f8;
+	text-align: center;
+	padding: 10px;
+}
+.emagenic a {
+	color: #444;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+
