@@ -66,7 +66,7 @@ if($_POST["Entrar"]){
     <?php } else  { ?>
   </p>
   <p>&nbsp;</p>
-  <p><strong><span class="titulo">Usuario</span></strong><span class="admin">: </span><span class="texto"><?php echo $_SESSION["$nusuario"]; ?></span></p>
+  <p class="titulos"><strong><span class="titulo">Usuario</span></strong><span class="admin">: </span><span class="texto"><?php echo $_SESSION["$nusuario"]; ?></span></p>
   <table width="287" border="1"  cellpadding="0">
     <tr>
       <td height="351"><table width="283" border="0" cellspacing="0" cellpadding="0">
@@ -90,10 +90,10 @@ if($_POST["Entrar"]){
           <td height="30" align="center" bgcolor="#FFFFFF"  class="logo" ><a href="slide.php" class="texto">Slide</a></td>
         </tr>
         <tr>
-          <td height="22" align="center" bgcolor="#FFFFFF"  class="logo" >&nbsp;</td>
+          <td height="30" align="center" bgcolor="#FFFFFF"  class="logo" ><a href="proximoscursos.php" class="texto">Proximos Cursos</a></td>
         </tr>
         <tr>
-          <td height="22" align="center" bgcolor="#FFFFFF"  class="logo" >&nbsp;</td>
+          <td height="30" align="center" bgcolor="#FFFFFF"  class="logo" ><a href="noticias.php" class="texto">Noticias</a></td>
         </tr>
         <tr>
           <td height="22" align="center" bgcolor="#FFFFFF"  class="logo" >&nbsp;</td>

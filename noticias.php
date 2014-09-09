@@ -72,42 +72,23 @@
 
     <!-- CONTENIDO PRINCIPAL -->
     <section class="contenido">
+      <?php 
+        $listado = "select * from noticias";
+        $sentencia = mysql_query($listado,$conn);
+        while($rs=mysql_fetch_array($sentencia,$mibase)){
+      ?>
       <div class="bloque">
         <div class="img_noticia">
-          <img src="imagenes/noticias/1.jpg">
+          <img src="imagenes/noticias/<?php echo $rs["id"]; ?>.jpg">
         </div>
         <div class="texto_noticia">
-          <h2>Titulo de la Noticia</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-          <a href="detallenoticia.php">ver detalle</a>
+          <h2><?php $texto = str_replace("\r\n","<br>",$rs["titulo_noticia"]); echo $texto ?></h2>
+          <p><?php $texto = str_replace("\r\n","<br>",$rs["contenido_noticia"]); echo $texto ?></p>
+          <a href="detallenoticia.php?id=<?php echo $rs["id"]; ?>">ver detalle</a>
         </div>
       </div>
-      <div class="bloque">
-        <div class="img_noticia">
-          <img src="imagenes/noticias/1.jpg">
-        </div>
-        <div class="texto_noticia">
-          <h2>Titulo de la Noticia</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-          <a href="detallenoticia.php">ver detalle</a>
-        </div>
-      </div>
-      <div class="bloque">
-        <div class="img_noticia">
-          <img src="imagenes/noticias/1.jpg">
-        </div>
-        <div class="texto_noticia">
-          <h2>Titulo de la Noticia</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-          <a href="detallenoticia.php">ver detalle</a>
-        </div>
-      </div>
+      <?php } ?>
+      
       <!-- LINKS DE INTERES-->
       <div class="links">
         <div class="titulo">
@@ -122,48 +103,28 @@
 
     <!-- CONTENIDO SECUNDARIO -->
     <section class="secundario">
-      <div class="proximos_cursos">
+       <div class="proximos_cursos">
         <div class="titulo_curso">
           PRÓXIMOS CURSOS
         </div>
+        <?php 
+        $listado = "select * from proximoscursos";
+        $sentencia = mysql_query($listado,$conn);
+        while($rs=mysql_fetch_array($sentencia,$mibase)){
+        ?>
         <!-- curso -->
         <div class="curso">
           <div class="imagen_curso">
-            <img src="imagenes/proximoscursos/1.jpg">
+            <img src="imagenes/proximoscursos/<?php echo $rs["id"]; ?>.jpg">
           </div>
           <div class="texto_curso">
-            <h2>Curso Valparaíso</h2>
-            <p>Desde el 18 al 22 de agosto de 2014. 
-            A realizarse en la Ciudad de Valparaíso, 
-            Hotel Diego de Almagro.</p>
+            <h2><?php $texto = str_replace("\r\n","<br>",$rs["titulo_pcurso"]); echo $texto ?></h2>
+            <p><?php $texto = str_replace("\r\n","<br>",$rs["contenido_pcurso"]); echo $texto ?></p>
           </div>
         </div>
-        <!-- curso -->
-        <div class="curso">
-          <div class="imagen_curso">
-            <img src="imagenes/proximoscursos/2.jpg">
-          </div>
-          <div class="texto_curso">
-            <h2>Curso Valparaíso</h2>
-            <p>Desde el 18 al 22 de agosto de 2014. 
-            A realizarse en la Ciudad de Valparaíso, 
-            Hotel Diego de Almagro.</p>
-          </div>
-        </div>
-        <!-- curso -->
-        <div class="curso">
-          <div class="imagen_curso">
-            <img src="imagenes/proximoscursos/3.jpg">
-          </div>
-          <div class="texto_curso">
-            <h2>Curso Valparaíso</h2>
-            <p>Desde el 18 al 22 de agosto de 2014. 
-            A realizarse en la Ciudad de Valparaíso, 
-            Hotel Diego de Almagro.</p>
-          </div>
-        </div>
+        <?php } ?>
       </div>
-
+      
       <!-- MENU ACORDEON -->
       <div id='cssmenu'>
         <ul>

@@ -170,6 +170,7 @@ footer .contenido_footer p {
 }
 .contenedor_principal .contenido .bloque .p {
 	display: inline-block;
+	
 }
 .contenedor_principal .contenido .cursos .curso {
 	margin-bottom: 25px;
@@ -205,10 +206,15 @@ footer .contenido_footer p {
 	margin-bottom: 15px;
 	font-weight: 600;
 }
+.contenedor_principal .contenido .links li {
+	list-style: none;
+	color: white;
+}
 .contenedor_principal .contenido .links li a {
 	color: #444;
 	font-size: 14px;
 	text-decoration: none;
+	list-style: none;
 }
 .contenedor_principal .contenido .links li a:hover {
 	color: #4b9ab3;

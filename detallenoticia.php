@@ -11,7 +11,13 @@
     $campo5 = $rs["campo5"];
     $campo6 = $rs["campo6"];
   }
-  
+  $listado = "select * from noticias where id = '$_GET[id]' ";
+  $sentencia = mysql_query($listado,$conn);
+  if($rs=mysql_fetch_array($sentencia,$mibase)){
+    $id= $rs["id"];
+    $titulo_noticia = str_replace("\r\n","<br>",$rs["titulo_noticia"]); 
+    $completo_noticia = str_replace("\r\n","<br>",$rs["completo_noticia"]);
+  }
 ?>
 <!doctype html>
 <html lang="es">
@@ -73,20 +79,15 @@
     <!-- CONTENIDO PRINCIPAL -->
     <section class="contenido">
       <div class="bloque">
-        <h2 class="h2">TITULO DETALLE CURSO</h2>
+        <h2 class="h2"><?php $texto = str_replace("\r\n","<br>",$rs["titulo_noticia"]); echo $texto ?></h2>
         <div class="img_detalle">
-          <img src="imagenes/noticias/1.jpg">
+          <img src="imagenes/noticias/<?php echo $rs["id"]; ?>.jpg">
         </div>
-        <h3>TITULO DE LA NOTICIA</h3>
-        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
+        <P><?php $texto = str_replace("\r\n","<br>",$rs["completo_noticia"]); echo $texto ?></P>
+        <div style="margin-top:15px;">
+          <div class="fb-like" data-href="http://www.novaotec.cl/detallenoticia.php?id=<?php echo $rs["id"]; ?>" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true" style="vertical-align: top; margin: 0 0 10px 0;"></div>
+          <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.novaotec.cl/detallenoticia.php?id=<?php echo $_GET["id"]; ?>" data-lang="es" data-size="large" data-hashtags="Nova Otec" data-dnt="true" style="vertical-align:top;">Twittear</a>  
+        </div>
       </div>
       <!-- LINKS DE INTERES-->
       <div class="links">
@@ -102,46 +103,26 @@
 
     <!-- CONTENIDO SECUNDARIO -->
     <section class="secundario">
-      <div class="proximos_cursos">
+       <div class="proximos_cursos">
         <div class="titulo_curso">
           PRÓXIMOS CURSOS
         </div>
+        <?php 
+        $listado = "select * from proximoscursos";
+        $sentencia = mysql_query($listado,$conn);
+        while($rs=mysql_fetch_array($sentencia,$mibase)){
+        ?>
         <!-- curso -->
         <div class="curso">
           <div class="imagen_curso">
-            <img src="imagenes/proximoscursos/1.jpg">
+            <img src="imagenes/proximoscursos/<?php echo $rs["id"]; ?>.jpg">
           </div>
           <div class="texto_curso">
-            <h2>Curso Valparaíso</h2>
-            <p>Desde el 18 al 22 de agosto de 2014. 
-            A realizarse en la Ciudad de Valparaíso, 
-            Hotel Diego de Almagro.</p>
+            <h2><?php $texto = str_replace("\r\n","<br>",$rs["titulo_pcurso"]); echo $texto ?></h2>
+            <p><?php $texto = str_replace("\r\n","<br>",$rs["contenido_pcurso"]); echo $texto ?></p>
           </div>
         </div>
-        <!-- curso -->
-        <div class="curso">
-          <div class="imagen_curso">
-            <img src="imagenes/proximoscursos/2.jpg">
-          </div>
-          <div class="texto_curso">
-            <h2>Curso Valparaíso</h2>
-            <p>Desde el 18 al 22 de agosto de 2014. 
-            A realizarse en la Ciudad de Valparaíso, 
-            Hotel Diego de Almagro.</p>
-          </div>
-        </div>
-        <!-- curso -->
-        <div class="curso">
-          <div class="imagen_curso">
-            <img src="imagenes/proximoscursos/3.jpg">
-          </div>
-          <div class="texto_curso">
-            <h2>Curso Valparaíso</h2>
-            <p>Desde el 18 al 22 de agosto de 2014. 
-            A realizarse en la Ciudad de Valparaíso, 
-            Hotel Diego de Almagro.</p>
-          </div>
-        </div>
+        <?php } ?>
       </div>
 
       <!-- MENU ACORDEON -->
@@ -296,6 +277,17 @@
     $(document).ready(function() {
       $('#carouselhAuto').jsCarousel({ onthumbnailclick: function(src) {  }, autoscroll: true, masked: true, itemstodisplay: 9, orientation: 'h' });
     });             
+  </script>
+
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+  </script>
+  <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
   </script>
 
 </body>

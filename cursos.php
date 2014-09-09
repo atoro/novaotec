@@ -151,46 +151,26 @@
 
     <!-- CONTENIDO SECUNDARIO -->
     <section class="secundario">
-      <div class="proximos_cursos">
+       <div class="proximos_cursos">
         <div class="titulo_curso">
           PRÓXIMOS CURSOS
         </div>
+        <?php 
+        $listado = "select * from proximoscursos";
+        $sentencia = mysql_query($listado,$conn);
+        while($rs=mysql_fetch_array($sentencia,$mibase)){
+        ?>
         <!-- curso -->
         <div class="curso">
           <div class="imagen_curso">
-            <img src="imagenes/proximoscursos/1.jpg">
+            <img src="imagenes/proximoscursos/<?php echo $rs["id"]; ?>.jpg">
           </div>
           <div class="texto_curso">
-            <h2>Curso Valparaíso</h2>
-            <p>Desde el 18 al 22 de agosto de 2014. 
-            A realizarse en la Ciudad de Valparaíso, 
-            Hotel Diego de Almagro.</p>
+            <h2><?php $texto = str_replace("\r\n","<br>",$rs["titulo_pcurso"]); echo $texto ?></h2>
+            <p><?php $texto = str_replace("\r\n","<br>",$rs["contenido_pcurso"]); echo $texto ?></p>
           </div>
         </div>
-        <!-- curso -->
-        <div class="curso">
-          <div class="imagen_curso">
-            <img src="imagenes/proximoscursos/2.jpg">
-          </div>
-          <div class="texto_curso">
-            <h2>Curso Valparaíso</h2>
-            <p>Desde el 18 al 22 de agosto de 2014. 
-            A realizarse en la Ciudad de Valparaíso, 
-            Hotel Diego de Almagro.</p>
-          </div>
-        </div>
-        <!-- curso -->
-        <div class="curso">
-          <div class="imagen_curso">
-            <img src="imagenes/proximoscursos/3.jpg">
-          </div>
-          <div class="texto_curso">
-            <h2>Curso Valparaíso</h2>
-            <p>Desde el 18 al 22 de agosto de 2014. 
-            A realizarse en la Ciudad de Valparaíso, 
-            Hotel Diego de Almagro.</p>
-          </div>
-        </div>
+        <?php } ?>
       </div>
 
       <!-- MENU ACORDEON -->
