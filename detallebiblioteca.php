@@ -76,40 +76,40 @@
         <div class="pdf">
           <img src="imagenes/pdf.png">
         </div>
-        <div class="a">
-          <a href="#">lorem ipsum simply</a>
+        <div class="bi">
+          lorem ipsum simply
         </div>
       </div>
       <div class="bloque">
         <div class="pdf">
           <img src="imagenes/pdf.png">
         </div>
-        <div class="a">
-          <a href="#">lorem ipsum simply</a>
+        <div class="bi">
+          lorem ipsum simply
         </div>
       </div>
       <div class="bloque">
         <div class="pdf">
           <img src="imagenes/pdf.png">
         </div>
-        <div class="a">
-          <a href="#">lorem ipsum simply</a>
+        <div class="bi">
+          Lorem ipsum simply
         </div>
       </div>
       <div class="bloque">
         <div class="pdf">
           <img src="imagenes/pdf.png">
         </div>
-        <div class="a">
-          <a href="#">lorem ipsum simply</a>
+        <div class="bi">
+          lorem ipsum simply
         </div>
       </div>
       <div class="bloque">
         <div class="pdf">
           <img src="imagenes/pdf.png">
         </div>
-        <div class="a">
-          <a href="#">lorem ipsum simply</a>
+        <div class="bi">
+          lorem ipsum simply
         </div>
       </div>
       <!-- LINKS DE INTERES-->

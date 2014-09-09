@@ -127,10 +127,20 @@ footer .contenido_footer p {
 	text-align: center;
 	margin-top: 15px;
 }
+.contenedor_principal .contenido .bloque .bi {
+	background: white;
+	display: inline-block;
+	vertical-align: top;
+}
+.contenedor_principal .contenido .bloque .bi a {
+	color: #444;
+	text-decoration: none;
+}
 .contenedor_principal .contenido .bloque .a {
 	display: inline-block;
 	line-height: 16px;
 	vertical-align: middle;
+	background-color: white;
 }
 .contenedor_principal .contenido .bloque .a a {
 	color: #444;
