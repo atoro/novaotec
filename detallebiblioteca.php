@@ -175,7 +175,7 @@
                  <li><a href='#'><span>Curso 3</span></a></li>
               </ul>
            </li>
-           <li class='has-sub'><a href='#'><span>Seguridad y Salud Ambiental</span></a>
+           <li class='has-sub'><a href='#'><span>Seguridad y Salud en el Trabajo</span></a>
               <ul>
                  <li><a href='#'><span>Curso 1</span></a></li>
                  <li><a href='#'><span>Curso 2</span></a></li>
