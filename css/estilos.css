@@ -1,3 +1,6 @@
+a {
+	text-decoration: none;
+}
 body {
 	color: #444;
 	font-family: 'Open Sans', sans-serif;
@@ -39,9 +42,12 @@ footer .contenido_footer p {
 	width: 90%;
 }
 .contenido_logo .centro_logo .logo {
-	width: 312px;
+	width: 290px;
 	margin: 0 auto;
 	padding-top: 25px;
+}
+.contenido_logo .centro_logo .logo img {
+	width: 100%;
 }
 .contenido_logo .centro_logo .redes {
 	display: none;
@@ -71,6 +77,10 @@ footer .contenido_footer p {
 	border-bottom: 1px solid #ddd;
 	margin: 0 0 20px 0;
 	padding-bottom: 15px;
+}
+.contenedor_principal .contenido .bloque .checkbook {
+	margin-top: 8px;
+	font-size: 14px;
 }
 .contenedor_principal .contenido .bloque .enviar {
 	display: block;
@@ -161,6 +171,7 @@ footer .contenido_footer p {
 	font-size: 16px;
 	font-weight: 600;
 	margin-bottom: 10px;
+	color: #f53101;
 }
 .contenedor_principal .contenido .bloque h3 {
 	font-size: 16px;
@@ -185,6 +196,10 @@ footer .contenido_footer p {
 .contenedor_principal .contenido .cursos .curso {
 	margin-bottom: 25px;
 }
+.contenedor_principal .contenido .cursos .curso2 {
+	margin-bottom: 25px;
+}
+
 .contenedor_principal .contenido .cursos .curso a {
 	background-color: #4b9ab3;
 	color: white;
@@ -210,6 +225,12 @@ footer .contenido_footer p {
 	width: 100%;
 }
 .contenedor_principal .contenido .cursos .curso .img_curso img {
+	width: 100%;
+}
+.contenedor_principal .contenido .cursos .curso2 .img_curso {
+	width: 100%;
+}
+.contenedor_principal .contenido .cursos .curso2 .img_curso img {
 	width: 100%;
 }
 .contenedor_principal .contenido .cursos h4 {

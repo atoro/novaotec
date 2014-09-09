@@ -45,6 +45,8 @@
       <div class="redes">
         <a href="#"><img src="imagenes/twitter.jpg"></a>
         <a href="#"><img src="imagenes/facebook.jpg"></a>
+        <a href="#"><img src="imagenes/in.jpg"></a>
+        <a href="#"><img src="imagenes/yt.jpg"></a>
       </div>
     </div>
   </div>
@@ -74,68 +76,70 @@
     <section class="contenido">
       <div class="cursos">
         <h4>CLIENTES PUBLICOS</h4>
-        <div class="curso">
+        <div class="curso2">
           <div class="img_curso">
             <img src="imagenes/clientes/publicos/1.jpg">
           </div>
         </div>
-        <div class="curso">
+        <div class="curso2">
           <div class="img_curso">
             <img src="imagenes/clientes/publicos/1.jpg">
           </div>
         </div>
-        <div class="curso">
+        <div class="curso2">
           <div class="img_curso">
             <img src="imagenes/clientes/publicos/1.jpg">
           </div>
         </div>
-        <div class="curso">
+        <div class="curso2">
           <div class="img_curso">
             <img src="imagenes/clientes/publicos/1.jpg">
           </div>
         </div>
-        <div class="curso">
+        <div class="curso2">
           <div class="img_curso">
             <img src="imagenes/clientes/publicos/1.jpg">
           </div>
         </div>
         <h4>CLIENTES PRIVADOS</h4>
-        <div class="curso">
+        <div class="curso2">
           <div class="img_curso">
             <img src="imagenes/clientes/publicos/1.jpg">
           </div>
         </div>
-        <div class="curso">
+        <div class="curso2">
           <div class="img_curso">
             <img src="imagenes/clientes/publicos/1.jpg">
           </div>
         </div>
-        <div class="curso">
+        <div class="curso2">
           <div class="img_curso">
             <img src="imagenes/clientes/publicos/1.jpg">
           </div>
         </div>
-        <div class="curso">
+        <div class="curso2">
           <div class="img_curso">
             <img src="imagenes/clientes/publicos/1.jpg">
           </div>
         </div>
-        <div class="curso">
+        <div class="curso2">
           <div class="img_curso">
             <img src="imagenes/clientes/publicos/1.jpg">
           </div>
         </div>
-        <div class="curso">
+        <div class="curso2">
           <div class="img_curso">
             <img src="imagenes/clientes/publicos/1.jpg">
           </div>
         </div>
-        <a href="#">
-          <input type="submit" name="button" id="button" value="Cursos Nova Otec PDF" class="boton">
-        </a>
-        <a href="#">
-          <input type="submit" name="button" id="button" value="Cursos Ejecutados por Empresas" class="boton">
-        </a>
+        <div>
+          <a href="#">
+            <input type="submit" name="button" id="button" value="Cursos Nova Otec PDF" class="boton">
+          </a>
+          <a href="#">
+            <input type="submit" name="button" id="button" value="Cursos Ejecutados por Empresas" class="boton">
+          </a>
+        </div>
       <!-- LINKS DE INTERES-->
       <div class="links">
         <div class="titulo">
@@ -227,6 +231,20 @@
               </ul>
            </li>
            <li class='has-sub'><a href='#'><span>Cursos Técnicos</span></a>
+              <ul>
+                 <li><a href='#'><span>Curso 1</span></a></li>
+                 <li><a href='#'><span>Curso 2</span></a></li>
+                 <li><a href='#'><span>Curso 3</span></a></li>
+              </ul>
+           </li>
+           <li class='has-sub'><a href='#'><span>Gestión de Riesgos</span></a>
+              <ul>
+                 <li><a href='#'><span>Curso 1</span></a></li>
+                 <li><a href='#'><span>Curso 2</span></a></li>
+                 <li><a href='#'><span>Curso 3</span></a></li>
+              </ul>
+           </li>
+           <li class='has-sub'><a href='#'><span>Eficiencia Energética</span></a>
               <ul>
                  <li><a href='#'><span>Curso 1</span></a></li>
                  <li><a href='#'><span>Curso 2</span></a></li>

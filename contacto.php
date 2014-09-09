@@ -45,6 +45,8 @@
       <div class="redes">
         <a href="#"><img src="imagenes/twitter.jpg"></a>
         <a href="#"><img src="imagenes/facebook.jpg"></a>
+        <a href="#"><img src="imagenes/in.jpg"></a>
+        <a href="#"><img src="imagenes/yt.jpg"></a>
       </div>
     </div>
   </div>
@@ -82,16 +84,19 @@
           <input class="input" name="Ciudad" type="text" placeholder="Ciudad"/>   
           <textarea name="consulta" id="consulta" class="mensaje" placeholder="Requerimientos"></textarea>
           <p>Indique otros requerimientos de su interés</p>
-          <select name="select" id="select" class="field_select">
-            <option value="uno">Gestión de Calidad</option>
-            <option value="dos">Gestión Ambiental</option>
-            <option value="tre">Inocuidad Alimentaria</option>
-            <option value="cua">Seguridad y Salud en Trabajo</option>
-            <option value="cin">Gestión Empresarial</option>
-            <option value="sei">Excelencia Operacional</option>
-            <option value="sie">Gestión de Personas</option>
-            <option value="och">Cursos Técnicos</option>
-          </select>
+
+          <div class="checkbook">
+            <input class="checkbook" type="checkbox" > Gestión de Calidad<br>
+            <input class="checkbook" type="checkbox" > Gestión Ambiental <br>
+            <input class="checkbook" type="checkbox" > Inocuidad Alimentaria<br>
+            <input class="checkbook" type="checkbox" > Seguridad y Salud en Trabajo<br>
+            <input class="checkbook" type="checkbox" > Gestión Empresarial<br>
+            <input class="checkbook" type="checkbox" > Excelencia Operacional<br>
+            <input class="checkbook" type="checkbox" > Gestión de Personas<br>
+            <input class="checkbook" type="checkbox" > Cursos Técnicos<br>
+            <input class="checkbook" type="checkbox" > Gestión de Riesgos<br>
+            <input class="checkbook" type="checkbox" > Eficiencia Energética
+          </div>
           <input class="enviar" name="Enviar" type="submit" value="Enviar"/>
         </form>
         <!--contacto-->
@@ -186,6 +191,20 @@
               </ul>
            </li>
            <li class='has-sub'><a href='#'><span>Cursos Técnicos</span></a>
+              <ul>
+                 <li><a href='#'><span>Curso 1</span></a></li>
+                 <li><a href='#'><span>Curso 2</span></a></li>
+                 <li><a href='#'><span>Curso 3</span></a></li>
+              </ul>
+           </li>
+           <li class='has-sub'><a href='#'><span>Gestión de Riesgos</span></a>
+              <ul>
+                 <li><a href='#'><span>Curso 1</span></a></li>
+                 <li><a href='#'><span>Curso 2</span></a></li>
+                 <li><a href='#'><span>Curso 3</span></a></li>
+              </ul>
+           </li>
+           <li class='has-sub'><a href='#'><span>Eficiencia Energética</span></a>
               <ul>
                  <li><a href='#'><span>Curso 1</span></a></li>
                  <li><a href='#'><span>Curso 2</span></a></li>

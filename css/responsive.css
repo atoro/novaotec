@@ -95,6 +95,12 @@
         margin-right: 15px;
         vertical-align: top;
     }
+    .contenedor_principal .contenido .cursos .curso2 {
+        width: 30%;
+        display: inline-block;
+        margin-right: 15px;
+        vertical-align: top;
+    }
     .contenedor_principal .secundario {
         width: 32%;
         display: inline-block;
@@ -170,6 +176,10 @@
     }
     .contenedor_principal .contenido .cursos .curso {
         width: 30%;
+        margin-right: 17px;
+    }
+    .contenedor_principal .contenido .cursos .curso2 {
+        width: 20%;
         margin-right: 17px;
     }
     .clientes {

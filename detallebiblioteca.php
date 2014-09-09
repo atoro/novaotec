@@ -45,6 +45,8 @@
       <div class="redes">
         <a href="#"><img src="imagenes/twitter.jpg"></a>
         <a href="#"><img src="imagenes/facebook.jpg"></a>
+        <a href="#"><img src="imagenes/in.jpg"></a>
+        <a href="#"><img src="imagenes/yt.jpg"></a>
       </div>
     </div>
   </div>
@@ -202,6 +204,20 @@
               </ul>
            </li>
            <li class='has-sub'><a href='#'><span>Cursos Técnicos</span></a>
+              <ul>
+                 <li><a href='#'><span>Curso 1</span></a></li>
+                 <li><a href='#'><span>Curso 2</span></a></li>
+                 <li><a href='#'><span>Curso 3</span></a></li>
+              </ul>
+           </li>
+           <li class='has-sub'><a href='#'><span>Gestión de Riesgos</span></a>
+              <ul>
+                 <li><a href='#'><span>Curso 1</span></a></li>
+                 <li><a href='#'><span>Curso 2</span></a></li>
+                 <li><a href='#'><span>Curso 3</span></a></li>
+              </ul>
+           </li>
+           <li class='has-sub'><a href='#'><span>Eficiencia Energética</span></a>
               <ul>
                  <li><a href='#'><span>Curso 1</span></a></li>
                  <li><a href='#'><span>Curso 2</span></a></li>
