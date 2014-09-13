@@ -144,10 +144,13 @@
         <div class="titulo">
           LINKS DE INTERES
         </div>
-        <li><a href="http://www.corfo.cl" target="new">Corfo</a></li>
-        <li><a href="http://www.sence.cl" target="new">Sence</a></li>
-        <li><a href="http://www.emagenic.cl" target="new">Emagenic</a></li>
-        <li><a href="http://www.google.cl" target="new">Google</a></li>
+        <?php 
+          $listadolink  = "select * from  link";
+          $sentencialink  = mysql_query($listadolink ,$conn);
+          while($rslink =mysql_fetch_array($sentencialink ,$mibase)){
+        ?>
+        <li><a href="<?php echo $rslink["url"] ?>" target="new"><?php echo $rslink["link"] ?></a></li>
+        <?php } ?>
       </div>
     </section>
 

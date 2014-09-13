@@ -76,62 +76,33 @@
     <section class="contenido">
       <div class="cursos">
         <h4>CLIENTES PUBLICOS</h4>
+
+        <?php 
+          $listado = "select * from clientes_publicos";
+          $sentencia = mysql_query($listado,$conn);
+          while($rs=mysql_fetch_array($sentencia,$mibase)){
+        ?>
         <div class="curso2">
           <div class="img_curso">
-            <img src="imagenes/clientes/publicos/1.jpg">
+            <img src="imagenes/clientes/publicos/<?php echo $rs["id"]; ?>.jpg">
           </div>
         </div>
-        <div class="curso2">
-          <div class="img_curso">
-            <img src="imagenes/clientes/publicos/1.jpg">
-          </div>
-        </div>
-        <div class="curso2">
-          <div class="img_curso">
-            <img src="imagenes/clientes/publicos/1.jpg">
-          </div>
-        </div>
-        <div class="curso2">
-          <div class="img_curso">
-            <img src="imagenes/clientes/publicos/1.jpg">
-          </div>
-        </div>
-        <div class="curso2">
-          <div class="img_curso">
-            <img src="imagenes/clientes/publicos/1.jpg">
-          </div>
-        </div>
+        <?php } ?>
+        
         <h4>CLIENTES PRIVADOS</h4>
+
+        <?php 
+          $listado = "select * from clientes_privados";
+          $sentencia = mysql_query($listado,$conn);
+          while($rs=mysql_fetch_array($sentencia,$mibase)){
+        ?>
         <div class="curso2">
           <div class="img_curso">
-            <img src="imagenes/clientes/publicos/1.jpg">
+            <img src="imagenes/clientes/privados/<?php echo $rs["id"]; ?>.jpg">
           </div>
         </div>
-        <div class="curso2">
-          <div class="img_curso">
-            <img src="imagenes/clientes/publicos/1.jpg">
-          </div>
-        </div>
-        <div class="curso2">
-          <div class="img_curso">
-            <img src="imagenes/clientes/publicos/1.jpg">
-          </div>
-        </div>
-        <div class="curso2">
-          <div class="img_curso">
-            <img src="imagenes/clientes/publicos/1.jpg">
-          </div>
-        </div>
-        <div class="curso2">
-          <div class="img_curso">
-            <img src="imagenes/clientes/publicos/1.jpg">
-          </div>
-        </div>
-        <div class="curso2">
-          <div class="img_curso">
-            <img src="imagenes/clientes/publicos/1.jpg">
-          </div>
-        </div>
+        <?php } ?>
+
         <div>
           <a href="#">
             <input type="submit" name="button" id="button" value="Cursos Nova Otec PDF" class="boton">
@@ -145,10 +116,13 @@
         <div class="titulo">
           LINKS DE INTERES
         </div>
-        <li><a href="http://www.corfo.cl" target="new">Corfo</a></li>
-        <li><a href="http://www.sence.cl" target="new">Sence</a></li>
-        <li><a href="http://www.emagenic.cl" target="new">Emagenic</a></li>
-        <li><a href="http://www.google.cl" target="new">Google</a></li>
+        <?php 
+          $listadolink  = "select * from  link";
+          $sentencialink  = mysql_query($listadolink ,$conn);
+          while($rslink =mysql_fetch_array($sentencialink ,$mibase)){
+        ?>
+        <li><a href="<?php echo $rslink["url"] ?>" target="new"><?php echo $rslink["link"] ?></a></li>
+        <?php } ?>
       </div>
     </section>
 

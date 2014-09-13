@@ -96,19 +96,22 @@ if($_POST["Entrar"]){
           <td height="30" align="center" bgcolor="#FFFFFF"  class="logo" ><a href="noticias.php" class="texto">Noticias</a></td>
         </tr>
         <tr>
-          <td height="22" align="center" bgcolor="#FFFFFF"  class="logo" >&nbsp;</td>
+          <td height="30" align="center" bgcolor="#FFFFFF"  class="logo" ><a href="link.php" class="texto">Links de Interés</a></td>
         </tr>
         <tr>
-          <td height="22" align="center" bgcolor="#FFFFFF"  class="logo" >&nbsp;</td>
+          <td height="30" align="center" bgcolor="#FFFFFF"  class="logo" ><a href="clientes.php" class="texto">// Clientes PDF //</a></td>
         </tr>
         <tr>
-          <td height="22" align="center" bgcolor="#FFFFFF"  class="logo" >&nbsp;</td>
+          <td height="30" align="center" bgcolor="#FFFFFF"  class="logo" ><a href="clientes_publicos.php" class="texto">Clientes Publicos</a></td>
         </tr>
         <tr>
-          <td height="22" align="center" bgcolor="#FFFFFF"  class="logo" >&nbsp;</td>
+          <td height="30" align="center" bgcolor="#FFFFFF"  class="logo" ><a href="clientes_privados.php" class="texto">Clientes Privados</a></td>
         </tr>
         <tr>
-          <td height="7" align="left" bgcolor="#FFFFFF"  class="post-text">&nbsp;</td>
+          <td height="30" align="center" bgcolor="#FFFFFF"  class="logo" >&nbsp;</td>
+        </tr>
+        <tr>
+          <td height="30" align="left" bgcolor="#FFFFFF"  class="post-text">&nbsp;</td>
         </tr>
         <tr>
           <td height="11" align="center" bgcolor="#f1f1f1" class="textoadmin"></td>
