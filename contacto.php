@@ -227,22 +227,15 @@
                 <div id="demo-left">
                     <div id="hWrapperAuto">
                         <div id="carouselhAuto">
-                            <div><img src="imagenes/clientes/1.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/2.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/3.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/4.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/5.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/6.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/7.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/8.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/9.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/10.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/11.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/12.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/13.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/14.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/15.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/16.jpg" /><br /></div>
+                          <?php 
+                          $listado = "select * from clientes";
+                          $sentencia = mysql_query($listado,$conn);
+                          while($rs=mysql_fetch_array($sentencia,$mibase)){
+                          ?>
+                            <div>
+                              <img src="imagenes/clientes/<?php echo $rs["id"]; ?>.jpg" /><br />
+                            </div>
+                          <?php } ?>
                         </div>
                     </div>
                 </div>
@@ -310,3 +303,29 @@
 
 </body>
 </html>
+<?php
+  if ($_POST["Enviar"]){
+    $destinatario = "atoro@emagenic.cl"; // cambiar mail destinatario //
+    $Nombre = $_POST["Nombre"];
+    $Empresa = $_POST["Empresa"];
+    $mail = $_POST["Mail"];
+    $Ciudad = $_POST["Ciudad"];
+    $consulta = $_POST["consulta"];
+    $asunto = "Consulta sitio web"; 
+    $cuerpo = "
+    <table width=100% border=0 cellspacing=0 cellpadding=0>
+      <tr><td>NOMBRE: $Nombre</td></tr>
+      <tr><td>EMPRSA: $Empresa</td></tr>
+      <tr><td>MAIL: $mail</td></tr>
+      <tr><td>Ciudad: $Ciudad</td></tr>
+      <tr><td>CONSULTA: $consulta</td></tr>
+    </table>";
+    $headers = "MIME-Version: 1.0\r\n"; 
+    $headers .= "Content-type: text/html; charset=utf-8\r\n"; 
+    $headers .= "From: $nombre <$mail>\r\n"; 
+    mail($destinatario,$asunto,$cuerpo,$headers);
+    echo "<script> alert('Su consulta fue enviada correctamente'); </script>";
+    
+    
+  }
+?>

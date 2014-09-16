@@ -99,7 +99,10 @@ if($_POST["Entrar"]){
           <td height="30" align="center" bgcolor="#FFFFFF"  class="logo" ><a href="link.php" class="texto">Links de Interés</a></td>
         </tr>
         <tr>
-          <td height="30" align="center" bgcolor="#FFFFFF"  class="logo" ><a href="clientes.php" class="texto">// Clientes PDF //</a></td>
+          <td height="30" align="center" bgcolor="#FFFFFF"  class="logo" ><a href="clientes.php" class="texto">Clientes Carrousel</a></td>
+        </tr>
+        <tr>
+          <td height="30" align="center" bgcolor="#FFFFFF"  class="logo" ><a href="clientespdf.php" class="texto">Clientes PDF</a></td>
         </tr>
         <tr>
           <td height="30" align="center" bgcolor="#FFFFFF"  class="logo" ><a href="clientes_publicos.php" class="texto">Clientes Publicos</a></td>
@@ -108,10 +111,13 @@ if($_POST["Entrar"]){
           <td height="30" align="center" bgcolor="#FFFFFF"  class="logo" ><a href="clientes_privados.php" class="texto">Clientes Privados</a></td>
         </tr>
         <tr>
-          <td height="30" align="center" bgcolor="#FFFFFF"  class="logo" >&nbsp;</td>
+          <td height="30" align="center" bgcolor="#FFFFFF"  class="logo" ><a href="galeria_evento.php" class="texto">Galería</a></td>
         </tr>
         <tr>
-          <td height="30" align="left" bgcolor="#FFFFFF"  class="post-text">&nbsp;</td>
+          <td height="30" align="center" bgcolor="#FFFFFF"  class="post-text"><a href="cursos.php" class="texto">Cursos</a></td>
+        </tr>
+        <tr>
+          <td height="30" align="center" bgcolor="#FFFFFF"  class="post-text"><a href="biblioteca.php" class="texto">Biblioteca</a></td>
         </tr>
         <tr>
           <td height="11" align="center" bgcolor="#f1f1f1" class="textoadmin"></td>
@@ -120,7 +126,7 @@ if($_POST["Entrar"]){
           <td height="20" align="center" bgcolor="#f1f1f1"><strong><a href="cambiopassword.php" class="texto" >Cambio de password</a></strong></td>
         </tr>
         <tr>
-          <td height="18" align="center" bgcolor="#F1F1F1"><a href="sesion.php?fun=cerrar" class="texto" ><span>Cerrar sesion</span></span></a></td>
+          <td height="30" align="center" bgcolor="#F1F1F1"><a href="sesion.php?fun=cerrar" class="texto" ><span>Cerrar sesion</span></span></a></td>
         </tr>
         
       </table>

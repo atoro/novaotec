@@ -79,7 +79,8 @@
           <img src="imagenes/pdf.png">
         </div>
         <div class="bi">
-          lorem ipsum simply
+          lorem ipsum simply 
+          <a style="display: inline-block; background-color: white; color: #f53101;" href="#">(bajar)</a>
         </div>
       </div>
       <div class="bloque">
@@ -88,6 +89,7 @@
         </div>
         <div class="bi">
           lorem ipsum simply
+          <a style="display: inline-block; background-color: white; color: #f53101;" href="#">(bajar)</a>
         </div>
       </div>
       <div class="bloque">
@@ -96,6 +98,7 @@
         </div>
         <div class="bi">
           Lorem ipsum simply
+          <a style="display: inline-block; background-color: white; color: #f53101;" href="#">(bajar)</a>
         </div>
       </div>
       <div class="bloque">
@@ -103,7 +106,8 @@
           <img src="imagenes/pdf.png">
         </div>
         <div class="bi">
-          lorem ipsum simply
+          lorem ipsum simply 
+          <a style="display: inline-block; background-color: white; color: #f53101;" href="#">(bajar)</a>
         </div>
       </div>
       <div class="bloque">
@@ -111,7 +115,8 @@
           <img src="imagenes/pdf.png">
         </div>
         <div class="bi">
-          lorem ipsum simply
+          lorem ipsum simply 
+          <a style="display: inline-block; background-color: white; color: #f53101;" href="#">(bajar)</a>
         </div>
       </div>
       <!-- LINKS DE INTERES-->
@@ -240,22 +245,15 @@
                 <div id="demo-left">
                     <div id="hWrapperAuto">
                         <div id="carouselhAuto">
-                            <div><img src="imagenes/clientes/1.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/2.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/3.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/4.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/5.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/6.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/7.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/8.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/9.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/10.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/11.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/12.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/13.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/14.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/15.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/16.jpg" /><br /></div>
+                          <?php 
+                          $listado = "select * from clientes";
+                          $sentencia = mysql_query($listado,$conn);
+                          while($rs=mysql_fetch_array($sentencia,$mibase)){
+                          ?>
+                            <div>
+                              <img src="imagenes/clientes/<?php echo $rs["id"]; ?>.jpg" /><br />
+                            </div>
+                          <?php } ?>
                         </div>
                     </div>
                 </div>

@@ -75,68 +75,20 @@
     <!-- CONTENIDO PRINCIPAL -->
     <section class="contenido">
       <div class="cursos">
+        <?php 
+          $listado = "select * from cursos";
+          $sentencia = mysql_query($listado,$conn);
+          while($rs=mysql_fetch_array($sentencia,$mibase)){
+        ?>
         <div class="curso">
           <div class="img_curso">
-            <img src="imagenes/cursos/1.jpg">
+            <img src="imagenes/cursos/<?php echo $rs["id"]; ?>.jpg">
           </div>
-          <h2>Gestión de Calidad</h2>
-          <p>ISO 9001</p>
-          <a href="detallecurso.php">ver más</a>
-        </div>
-        <div class="curso">
-          <div class="img_curso">
-            <img src="imagenes/cursos/2.jpg">
-          </div>
-          <h2>Gestión Ambiental</h2>
-          <p>ISO 14001</p>
-          <a href="detallecurso.php">ver más</a>
-        </div>
-        <div class="curso">
-          <div class="img_curso">
-            <img src="imagenes/cursos/3.jpg">
-          </div>
-          <h2>Inocuidad Alimentaria</h2>
-          <p>BRC-HACCP ISO 22000</p>
-          <a href="detallecurso.php">ver más</a>
-        </div>
-        <div class="curso">
-          <div class="img_curso">
-            <img src="imagenes/cursos/4.jpg">
-          </div>
-          <h2>Seguridad y Salud en el Trabajo</h2>
-          <p>OHSAS 18001</p>
-          <a href="detallecurso.php">ver más</a>
-        </div>
-        <div class="curso">
-          <div class="img_curso">
-            <img src="imagenes/cursos/5.jpg">
-          </div>
-          <h2>Gestión Empresarial</h2>
-          <p>BSC-KPI</p>
-          <a href="detallecurso.php">ver más</a>
-        </div>
-        <div class="curso">
-          <div class="img_curso">
-            <img src="imagenes/cursos/6.jpg">
-          </div>
-          <h2>Excelencia Operacional</h2>
-          <p>KAIZEN 5S - LEAN</p>
-          <a href="detallecurso.php">ver más</a>
-        </div>
-        <div class="curso">
-          <div class="img_curso">
-            <img src="imagenes/cursos/7.jpg">
-          </div>
-          <h2>Gestión de Personas</h2>
-          <a href="detallecurso.php">ver más</a>
-        </div>
-        <div class="curso">
-          <div class="img_curso">
-            <img src="imagenes/cursos/8.jpg">
-          </div>
-          <h2>Cursos Técnicos</h2>
-          <a href="detallecurso.php">ver más</a>
-        </div>
+          <h2><?php $texto = str_replace("\r\n","<br>",$rs["titulo_curso"]); echo $texto ?></h2>
+          <p><?php $texto = str_replace("\r\n","<br>",$rs["subtitulo_curso"]); echo $texto ?></p>
+          <a href="detallecurso.php?id=<?php echo $rs["id"]; ?>">ver más</a>
+        </div> 
+        <?php } ?>
       </div>
 
       <!-- LINKS DE INTERES-->
@@ -265,22 +217,15 @@
                 <div id="demo-left">
                     <div id="hWrapperAuto">
                         <div id="carouselhAuto">
-                            <div><img src="imagenes/clientes/1.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/2.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/3.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/4.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/5.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/6.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/7.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/8.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/9.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/10.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/11.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/12.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/13.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/14.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/15.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/16.jpg" /><br /></div>
+                          <?php 
+                          $listado = "select * from clientes";
+                          $sentencia = mysql_query($listado,$conn);
+                          while($rs=mysql_fetch_array($sentencia,$mibase)){
+                          ?>
+                            <div>
+                              <img src="imagenes/clientes/<?php echo $rs["id"]; ?>.jpg" /><br />
+                            </div>
+                          <?php } ?>
                         </div>
                     </div>
                 </div>

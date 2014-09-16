@@ -78,6 +78,14 @@
         vertical-align: top;
         text-align: left;
     }
+    .contenedor_principal .contenido .bloque .galeria_evento .img_galeria {
+       display: inline-block;
+       vertical-align: top;
+       width: 40%;
+    }
+    .contenedor_principal .contenido .bloque .galeria_evento .img_galeria img {
+        width: 100%;
+    }
     .contenedor_principal .contenido .bloque .img_noticia {
         width: 45%;
         display: inline-block;
@@ -173,6 +181,14 @@
     .contenedor_principal {
         margin: 45px auto 0 auto;
         width: 1024px;
+    }
+    .contenedor_principal .contenido .bloque .galeria_evento .img_galeria {
+       display: inline-block;
+       vertical-align: top;
+       width: 30%;
+    }
+    .contenedor_principal .contenido .bloque .galeria_evento .img_galeria img {
+        width: 100%;
     }
     .contenedor_principal .contenido .cursos .curso {
         width: 30%;

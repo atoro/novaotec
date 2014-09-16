@@ -95,6 +95,18 @@ footer .contenido_footer p {
 .contenedor_principal .contenido .bloque .enviar:hover {
 	background-color: #f63001;
 }
+.contenedor_principal .contenido .bloque .galeria_evento {
+	width: 100%;
+	margin-top: 20px;
+}
+.contenedor_principal .contenido .bloque .galeria_evento .img_galeria {
+	width: 45%;
+	vertical-align: top;
+	display: inline-block;
+}
+.contenedor_principal .contenido .bloque .galeria_evento .img_galeria img {
+	width: 100%;
+}
 .contenedor_principal .contenido .bloque .input {
 	width: 100%;
 	display: block;

@@ -75,69 +75,19 @@
     <!-- CONTENIDO PRINCIPAL -->
     <section class="contenido">
       <div class="cursos">
+        <?php 
+        $listado = "select * from biblioteca";
+        $sentencia = mysql_query($listado,$conn);
+        while($rs=mysql_fetch_array($sentencia,$mibase)){
+        ?>
         <div class="curso">
           <div class="img_curso">
-            <img src="imagenes/biblioteca/1.jpg">
+            <img src="imagenes/biblioteca/<?php echo $rs["id"]; ?>.jpg">
           </div>
-          <h2>Calidad</h2>
-          <a href="detallebiblioteca.php">ver más</a>
+          <h2><?php $texto = str_replace("\r\n","<br>",$rs["nombre_biblioteca"]); echo $texto ?></h2>
+          <a href="detallebiblioteca.php?id=<?php echo $rs["id"]; ?>">ver más</a>
         </div>
-        <div class="curso">
-          <div class="img_curso">
-            <img src="imagenes/biblioteca/2.jpg">
-          </div>
-          <h2>Medio Ambiente</h2>
-          <a href="detallebiblioteca.php">ver más</a>
-        </div>
-        <div class="curso">
-          <div class="img_curso">
-            <img src="imagenes/biblioteca/3.jpg">
-          </div>
-          <h2>Inocuidad Alimentaria</h2>
-          <a href="detallebiblioteca.php">ver más</a>
-        </div>
-        <div class="curso">
-          <div class="img_curso">
-            <img src="imagenes/biblioteca/4.jpg">
-          </div>
-          <h2>Legislación</h2>
-          <a href="detallebiblioteca.php">ver más</a>
-        </div>
-        <div class="curso">
-          <div class="img_curso">
-            <img src="imagenes/biblioteca/5.jpg">
-          </div>
-          <h2>Seguridad y Salud en el Trabajo</h2>
-          <a href="detallebiblioteca.php">ver más</a>
-        </div>
-        <div class="curso">
-          <div class="img_curso">
-            <img src="imagenes/biblioteca/6.jpg">
-          </div>
-          <h2>Gestión Empresarial</h2>
-          <a href="detallebiblioteca.php">ver más</a>
-        </div>
-        <div class="curso">
-          <div class="img_curso">
-            <img src="imagenes/biblioteca/7.jpg">
-          </div>
-          <h2>Gestión de RRHH</h2>
-          <a href="detallebiblioteca.php">ver más</a>
-        </div>
-        <div class="curso">
-          <div class="img_curso">
-            <img src="imagenes/biblioteca/8.jpg">
-          </div>
-          <h2>KAIZEN 5S - LEAN</h2>
-          <a href="detallebiblioteca.php">ver más</a>
-        </div>
-        <div class="curso">
-          <div class="img_curso">
-            <img src="imagenes/biblioteca/9.jpg">
-          </div>
-          <h2>Otros</h2>
-          <a href="detallebiblioteca.php">ver más</a>
-        </div>
+        <?php } ?>
       </div>
 
       <!-- LINKS DE INTERES-->
@@ -266,22 +216,15 @@
                 <div id="demo-left">
                     <div id="hWrapperAuto">
                         <div id="carouselhAuto">
-                            <div><img src="imagenes/clientes/1.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/2.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/3.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/4.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/5.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/6.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/7.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/8.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/9.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/10.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/11.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/12.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/13.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/14.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/15.jpg" /><br /></div>
-                            <div><img src="imagenes/clientes/16.jpg" /><br /></div>
+                          <?php 
+                          $listado = "select * from clientes";
+                          $sentencia = mysql_query($listado,$conn);
+                          while($rs=mysql_fetch_array($sentencia,$mibase)){
+                          ?>
+                            <div>
+                              <img src="imagenes/clientes/<?php echo $rs["id"]; ?>.jpg" /><br />
+                            </div>
+                          <?php } ?>
                         </div>
                     </div>
                 </div>
